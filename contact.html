@@ -98,6 +98,68 @@
     <a href="#">Liens à venir</a>
   </header>
 
+  
+  <!-- FORMULAIRE -->
+  <div class="form-container">
+    <h2>Contactez-nous</h2>
+    <p>Remplissez le formulaire ci-dessous pour nous envoyer votre demande.</p>
+    <form>
+      <label for="profil">Vous êtes ? *</label>
+      <select id="profil" name="profil" required>
+        <option value="">Sélectionnez votre profil</option>
+        <option value="etudiant">Étudiant</option>
+        <option value="parent">Parent</option>
+        <option value="entreprise">Entreprise</option>
+      </select>
+
+      <label for="societe">Société</label>
+      <input type="text" id="societe" name="societe">
+
+      <label>Civilité *</label>
+      <div class="civilite">
+        <input type="radio" id="madame" name="civilite" value="madame" required>
+        <label for="madame">Madame</label>
+        <input type="radio" id="monsieur" name="civilite" value="monsieur">
+        <label for="monsieur">Monsieur</label>
+        <input type="radio" id="autre" name="civilite" value="autre">
+        <label for="autre">Autre</label>
+      </div>
+
+      <label for="prenom">Prénom *</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="nom">Nom *</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="email2">Confirmez l'email *</label>
+      <input type="email" id="email2" name="email2" required>
+
+      <label for="tel">Téléphone *</label>
+      <input type="tel" id="tel" name="tel" placeholder="+33 6 12 34 56 78" required>
+
+      <label for="objet">Objet *</label>
+      <select id="objet" name="objet" required>
+        <option value="">Sélectionnez l'objet de votre demande</option>
+        <option value="infos">Demande d'informations</option>
+        <option value="admission">Admission</option>
+        <option value="partenariat">Partenariat</option>
+      </select>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <div class="checkboxes">
+        <label><input type="checkbox" name="info"> J'accepte de recevoir des informations de la part de ISEN Ouest.</label><br>
+        <label><input type="checkbox" name="confidentialite" required> J'accepte la politique de confidentialité.</label>
+      </div>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <img src="https://isen-ouest.fr/wp-content/uploads/2025/10/01/isen-ouest-blanc.png" alt="Logo ISEN Ouest">
@@ -106,3 +168,4 @@
 
 </body>
 </html>
+
